@@ -1,3 +1,4 @@
+import 'package:alfa_flutix/bloc/user_bloc.dart';
 import 'package:alfa_flutix/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       value: AuthServices.userStream,
       child: MultiBlocProvider(
         providers: [
-          BlocProvider(create: (_)=>PageBloc())
+          BlocProvider(create: (_)=>PageBloc()),
+          BlocProvider(create: (_)=>UserBloc())
         ],
           child:
               MaterialApp(debugShowCheckedModeBanner: false, home: Wrapper())),
