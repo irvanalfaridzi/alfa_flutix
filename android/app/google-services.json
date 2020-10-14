@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "70759255497",
-    "firebase_url": "https://bwa-flutix-786c5.firebaseio.com",
-    "project_id": "bwa-flutix-786c5",
-    "storage_bucket": "bwa-flutix-786c5.appspot.com"
+    "project_number": "422376224283",
+    "firebase_url": "https://bwa-flutix-2ffef.firebaseio.com",
+    "project_id": "bwa-flutix-2ffef",
+    "storage_bucket": "bwa-flutix-2ffef.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:70759255497:android:d626289445b4fe66886c18",
+        "mobilesdk_app_id": "1:422376224283:android:9aed35e4a9104d4f6d2abe",
         "android_client_info": {
           "package_name": "com.example.alfa_flutix"
         }
       },
       "oauth_client": [
         {
-          "client_id": "70759255497-p5q84qcg28av18otdqtpsen6tdb5qqmo.apps.googleusercontent.com",
+          "client_id": "422376224283-sdh9fejqchjqrcpjbaftt6h3ub8lmnv3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD6-UV1VOEkBi8s144G_rihcASKt8qlD7w"
+          "current_key": "AIzaSyAAtfG190FvyXNG9vfVx_9ilxSYnU7ssHw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "70759255497-p5q84qcg28av18otdqtpsen6tdb5qqmo.apps.googleusercontent.com",
+              "client_id": "422376224283-sdh9fejqchjqrcpjbaftt6h3ub8lmnv3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -15,6 +15,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // asli code
     return StreamProvider.value(
       value: AuthServices.userStream,
       child: MultiBlocProvider(
@@ -29,5 +30,36 @@ class MyApp extends StatelessWidget {
                   debugShowCheckedModeBanner: false,
                   home: Wrapper()))),
     );
+
+    // coba signup
+    // return MaterialApp(
+    //   debugShowCheckedModeBanner: false,
+    //   home: Scaffold(
+    //     body: Center(
+    //       child: Column(
+    //         mainAxisAlignment: MainAxisAlignment.center,
+    //         children: <Widget>[
+    //           RaisedButton(
+    //               child: Text("Sign Up"),
+    //               onPressed: () async {
+    //                 SignInSignUpResult result = await AuthServices.signUp(
+    //                     "coba@gmail.com",
+    //                     "123456",
+    //                     "Irvan Alfaridzi",
+    //                     ["Action", "Horror", "Music", "Drama"],
+    //                     "Korean");
+
+    //                     if (result.user == null) {
+    //                       print(result.message);
+    //                     } else {
+    //                       print(result.user.toString());
+    //                     }
+
+    //               })
+    //         ],
+    //       ),
+    //     ),
+    //   ),
+    // );
   }
 }
