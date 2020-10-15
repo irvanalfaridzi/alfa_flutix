@@ -34,7 +34,7 @@ class _MainPageState extends State<MainPage> {
             });
           },
           children: <Widget> [
-            Center(child: Text("New Movie"),),
+            MoviePage(),
             Center(child: Text("My Tickets"),)
           ],
         ),
@@ -56,7 +56,10 @@ class _MainPageState extends State<MainPage> {
                   color: Colors.black.withOpacity(0.54),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                context.bloc<UserBloc>().add(SignOut());
+                AuthServices.signOut();
+              },
             ),
           ),
         )
