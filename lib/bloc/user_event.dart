@@ -7,7 +7,7 @@ abstract class UserEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class LoadUser extends UserEvent{
+class LoadUser extends UserEvent {
   final String id;
   LoadUser(this.id);
   @override
@@ -17,5 +17,13 @@ class LoadUser extends UserEvent{
 class SignOut extends UserEvent {
   @override
   List<Object> get props => [];
-  
+}
+
+class UpdateData extends UserEvent {
+  final String name;
+  final String profileImage;
+
+  UpdateData({this.name, this.profileImage});
+  @override
+  List<Object> get props => [name, profileImage];
 }

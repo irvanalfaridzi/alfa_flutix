@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:alfa_flutix/bloc/blocs.dart';
 import 'package:alfa_flutix/models/models.dart';
 import 'package:alfa_flutix/services/services.dart';
 import 'package:bloc/bloc.dart';
@@ -20,8 +21,14 @@ class UserBloc extends Bloc<UserEvent, UserState> {
     if (event is LoadUser) {
       User user = await UserServices.getUser(event.id);
       yield UserLoaded(user);
-    } else if(event is SignOut) {
+    } else if (event is SignOut) {
       yield UserInitial();
+    } else if (event is UpdateData) {
+      User updateUser = (state as UserLoaded)
+          .user
+          .copyWith(name: event.name, profilePicture: event.profileImage);
+
+      yield UserLoaded(updateUser);
     }
   }
 }
