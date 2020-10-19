@@ -149,7 +149,7 @@ class MoviePage extends StatelessWidget {
         }),
 
         // Note: Coming Soon
-         Container(
+        Container(
           margin: EdgeInsets.fromLTRB(defaultMargin, 30, defaultMargin, 12),
           child: Text(
             "Coming Soon",
@@ -158,7 +158,7 @@ class MoviePage extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 140,
+          height: 200,
           child: BlocBuilder<MovieBloc, MovieState>(
             builder: (_, movieState) {
               if (movieState is MovieLoaded) {
@@ -183,6 +183,9 @@ class MoviePage extends StatelessWidget {
             },
           ),
         ),
+        SizedBox(
+          height: 100,
+        )
       ],
     );
   }
