@@ -158,7 +158,7 @@ class MoviePage extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 200,
+          height: 160,
           child: BlocBuilder<MovieBloc, MovieState>(
             builder: (_, movieState) {
               if (movieState is MovieLoaded) {
@@ -182,6 +182,24 @@ class MoviePage extends StatelessWidget {
               }
             },
           ),
+        ),
+
+        // Note: Get Lucky Day
+        Container(
+          margin: EdgeInsets.fromLTRB(defaultMargin, 30, defaultMargin, 12),
+          child: Text(
+            "Get Lucky Day",
+            style: blackTextFont.copyWith(
+                fontSize: 18, fontWeight: FontWeight.bold),
+          ),
+        ),
+        Column(
+          children: dummyPromos
+              .map((e) => Padding(
+                  padding:
+                      EdgeInsets.fromLTRB(defaultMargin, 0, defaultMargin, 16),
+                  child: PromoCard(e)))
+              .toList(),
         ),
         SizedBox(
           height: 100,
